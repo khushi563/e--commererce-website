@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCOUNTS-TRENDS</title>                                   
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="home.html"> 
+    <link rel="stylesheet" href="INDEX.html"> 
+    <link rel="stylesheet" href="cart.html"> 
+    <link rel="stylesheet" href="account.html">                
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="eommerce.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">HOME</a></li>                 <!--ADDING NAVIGATION BARS-->
+                        <li><a href="product.html">PRODUCT</a></li>              <!--ADDING NAVIGATION BARS-->
+                        <li><a href="INDEX.html">ABOUT</a></li>                <!--ADDING NAVIGATION BARS-->
+                        <li><a href="account.html">ACCOUNT</a></li>              <!--ADDING NAVIGATION BARS-->
+                        <li><a href="cart.html">CART</a></li> 
+                        </ul>
+                </nav>
+                <img src="cart.png" width="25px" height="25px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+ 
+
+
+            <!---------------ACCOUNT PAGE--------------------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="image.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-button">
+                        <span onclick="login()">login</span>
+                        <span onclick="register()">register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="loginform" name="myForm" onsubmit="return validateForm()" method="post">
+                        <input type="text" placeholder="Username" name="fname">
+                        <input type="password" placeholder="Password">
+                        <button type="Submit" class="button">Login</button>
+                        <a href="account.html">Forgot Password</a>
+                    </form>
+                    <form id="registrationform" name="myForm1" onsubmit="return validateForm1()" method="post">
+                        <input type="text" placeholder="Username" name="fname1">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="Password">
+                        <button type="Submit" class="button">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <!---------------MENU TOGGLE--------------------->
+<script>
+var MenuItems = Document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0PX";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0PX")
+        {
+            MenuItems.style.maxHeight = "200PX";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0PX";
+
+        }
+    }
+</script>
+
+
+
+
+
+              
+<script>
+    var Loginform = documnent.getElementById("loginform")
+    var Registrationform = documnent.getElementById("registrationform")
+    var Indicator = documnent.getElementById("Indicator")
+    function register(){
+        registrationform.style.transform="translateX(0px)";
+        loginform.style.transform="translateX(0px)";
+        Indicator.style.transform="translateX(100px)";
+    }
+    function login(){
+        registrationform.style.transform="translateX(300px)";
+        loginform.style.transform="translateX(300px)";
+        Indicator.style.transform="translateX(0px)";
+    }
+</script></body></html>

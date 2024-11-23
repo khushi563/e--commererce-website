@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME-TRENDS</title>                                   <!--PROVIDING TITLE TO WEBSITE-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="account.html">
+    <link rel="stylesheet" href="cart.html">
+    <link rel="stylesheet" href="INDEX.html">                        <!--LINKING OF CSS SHEET-->
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="eommerce.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">HOME</a></li>                 <!--ADDING NAVIGATION BARS-->
+                        <li><a href="product.html">PRODUCT</a></li>              <!--ADDING NAVIGATION BARS-->
+                        <li><a href="INDEX.html">ABOUT</a></li>                <!--ADDING NAVIGATION BARS-->
+                        <li><a href="account.html">ACCOUNT</a></li>              <!--ADDING NAVIGATION BARS-->
+                        <li><a href="cart.html">CART</a></li> 
+                        </ul>
+                </nav>
+                <img src="cart.png" width="25px" height="25px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+            
+
+
+                   <!-----------------single product----------------->
+<div class="small container home">
+    <div class="row">
+        <div class="col-2">
+            <img src="bluetop.png" width="100%">
+        </div>
+        <div class="col-2">
+            <p>HOME/BLUE TOP</p>
+            <h1>BLUE TOP BY ZARA</h1>
+            <h4>$40.0</h4>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+            <input type="number" value="1">
+            <a href="home.html" class="button">ADD TO CART</a>
+        </div>
+    </div>
+</div>
+
+
+
+                <!-----------------title----------------->
+<div class="small container cart-page">
+    <div class="row row-2">
+        <h2>RELATED PRODUCTS</h2>
+    </div>
+</div>
+
+
+
+                <!----------------- product----------------->
+<div class="small container">
+    <div class="row">
+        <div class="col-4">
+            <img src="white shirt.png">
+            <h4>WHITE SHIRT</h4>
+            <p>$120.00</p>
+        </div>
+        <div class="col-4">
+            <img src="women watch.png">
+            <h4>WOMEN WATCH</h4>
+            <p>$150.00</p>
+        </div>
+        <div class="col-4">
+            <img src="shoes red.png">
+            <h4>RED SHOES</h4>
+            <p>$100.00</p>
+        </div>
+        <div class="col-4">
+            <img src="watch.png">
+            <h4>STYLISH WATCH</h4>
+            <p>$100.00</p>
+        </div>
+    </div>
+</div>
+
+
+
+            <!---MENU TOGGLE-->
+<script>
+var MenuItems = Document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0PX";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0PX")
+        {
+            MenuItems.style.maxHeight = "200PX";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0PX";
+
+        }
+    }
+</script>
+
+</body></html>

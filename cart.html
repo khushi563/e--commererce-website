@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART-TRENDS</title>                                   <!--PROVIDING TITLE TO WEBSITE-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.html">
+    <link rel="stylesheet" href="account.html">
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="INDEX.html">                <!--LINKING OF CSS SHEET-->
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="eommerce.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">HOME</a></li>                 <!--ADDING NAVIGATION BARS-->
+                        <li><a href="product.html">PRODUCT</a></li>              <!--ADDING NAVIGATION BARS-->
+                        <li><a href="INDEX.html">ABOUT</a></li>                <!--ADDING NAVIGATION BARS-->
+                        <li><a href="account.html">ACCOUNT</a></li>              <!--ADDING NAVIGATION BARS-->
+                        <li><a href="cart.html">CART</a></li> 
+                        </ul>
+                </nav>
+                <img src="cart.png" width="25px" height="25px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+ 
+
+
+        <!------------------cart items details-------------->
+<div class="small container">
+    <table>
+        <tbody><tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="bluetop.png">
+                    <div>
+                        <p>BLUE TOP BY ZARA</p>
+                        <br>
+                        <small>Price:$40.0</small>
+                        <br>
+                        <a>Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$40.0</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="headphone.png">
+                    <div>
+                        <p>SMART HEADPHONE</p>
+                        <br>
+                        <small>Price:$60.0</small>
+                        <br>
+                        <a>Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$60.0</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="shoes red.png">
+                    <div>
+                        <p>RED SHOES</p>
+                        <br>
+                        <small>Price:$400.0</small>
+                        <br>
+                        <a>Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$400.0</td>
+        </tr>
+    </tbody></table>
+    <div class="total-price">
+        <table>
+            <tbody><tr>
+                <td>Subtotal</td>
+                <td>$500.0</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$70.0</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$570.0</td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+            <!---------------MENU TOGGLE--------------------->
+    <script>
+    var MenuItems = Document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0PX";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0PX")
+            {
+                MenuItems.style.maxHeight = "200PX";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0PX";
+
+            }
+        }
+    </script>
+
+    </body></html>
